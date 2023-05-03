@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url("./assets/bank_cards_banking_financial-services8-2.avif");
+    background-size: cover;
+}
