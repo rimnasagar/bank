@@ -10,11 +10,17 @@ export class AppComponent implements OnInit {
   data="your perfect banking partner"
   placeholderData="enter username"
   placedata2="enter password"
+  uname:any
+  psw:any
   constructor(){}
   ngOnInit(): void {
     
   }
-  login(){
+  login(a:any,b:any){
+    this.uname=a.value
+    this.psw=b.value
+    console.log(this.uname,this.psw);
+    
 
     alert("login clicked")
   }
