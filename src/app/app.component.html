@@ -14,10 +14,10 @@
     <h1 class="text-center mt-5 p-5">Sign In</h1>
     <form action="" >
     <label for="">Username</label>
-   <input  #uname [placeholder]="placeholderData" type="text" class="form-control" id="uname">
+   <input [(ngModel)]="uname"  [placeholder]="placeholderData" type="text" class="form-control" name="ac" id="uname">
    <label for="" >Password</label>
-   <input #psw  [placeholder]="placedata2" type="text" class="form-control" id="password">
-   <button type="button" (click)="login(uname,psw)">Login</button>
+   <input name="ps" [(ngModel)]="psw"   [placeholder]="placedata2" type="text" class="form-control" id="password">
+   <button type="button" (click)="login()">Login</button>
   </form>
   <p>Dont Have An Account</p>
   <a href=""> Create Account</a>

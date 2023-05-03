@@ -12,17 +12,16 @@ export class AppComponent implements OnInit {
   placedata2="enter password"
   uname:any
   psw:any
+ 
   constructor(){}
   ngOnInit(): void {
     
   }
-  login(a:any,b:any){
-    this.uname=a.value
-    this.psw=b.value
-    console.log(this.uname,this.psw);
+  login(){
+    
     
 
-    alert("login clicked")
+    alert(this.uname)
   }
   unameChange(event:any){
     console.log(event.target.value);
